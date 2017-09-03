@@ -23,7 +23,7 @@ github_username:  hombremuchacho
 
 # Build settings
 markdown: kramdown
-theme: overkyll-jekyll-theme 
+theme: midnight 
 plugins:
   - jekyll-feed
 
