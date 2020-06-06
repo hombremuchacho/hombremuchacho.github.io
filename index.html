@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <canvas width="1440" height="750"></canvas>
 <script src="https://unpkg.com/d3-timer"></script>
 <script>
 
-var words = "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker.".split(/\s+/g);
+var words = "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee. My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker.".split(/\s+/g);
 
 var canvas = document.querySelector("canvas"),
     canvas2 = canvas.cloneNode(),
@@ -14,7 +15,8 @@ var canvas = document.querySelector("canvas"),
     height = canvas.height;
 
 context.font = context2.font = "300px Helvetica Neue";
-context.textAlign = context2.textAlign = "center";
+context.fillStyle = context2.fillStyle = "red";
+context.textAlign = context2.textAlign = "right";
 context.lineJoin = context2.lineJoin = "round";
 
 (function next() {
@@ -33,5 +35,7 @@ context.lineJoin = context2.lineJoin = "round";
     context.drawImage(canvas2, 0, 0);
   });
 })();
+
+
 
 </script>
